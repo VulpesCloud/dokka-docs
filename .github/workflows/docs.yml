@@ -41,10 +41,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Gradle wrapper executable
-        run: chmod +x gradlew
+        run: chmod +x cloud/gradlew
 
       - name: Build with Gradle
-        run: ./gradlew dokkaHtmlMultiModule
+        run: ./cloud/gradlew dokkaHtmlMultiModule
 
   deploy:
     environment:
