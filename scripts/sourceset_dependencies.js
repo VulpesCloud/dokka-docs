@@ -1,1 +1,0 @@
-sourceset_dependencies = '{":VulpesCloud-bridge:dokkaHtmlPartial/main":[],":VulpesCloud-api:dokkaHtmlPartial/main":[],":VulpesCloud-launcher:dokkaHtmlPartial/main":[],":VulpesCloud-node:dokkaHtmlPartial/main":[],":VulpesCloud-connector:dokkaHtmlPartial/main":[],":VulpesCloud-wrapper:dokkaHtmlPartial/main":[]}'
