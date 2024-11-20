@@ -18,7 +18,10 @@ concurrency:
 
 jobs:
   build:
-    runs-on: self-hosted
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -43,24 +46,7 @@ jobs:
         run: |
           cd vulpescloud
           ./gradlew dokkaHtmlMultiModule
-      - name: Verify Output Directory
-        run: |
-          pwd
 
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Verify Output Directory
-        run: |
-          pwd
-          ls
-        
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
