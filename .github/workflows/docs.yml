@@ -41,10 +41,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Gradle wrapper executable
-        run: chmod +x cloud/gradlew
+        run: chmod +x temp/gradlew
 
       - name: Build with Gradle
-        run: ./cloud/gradlew dokkaHtmlMultiModule
+        run: ./temp/gradlew dokkaHtmlMultiModule
 
   deploy:
     environment:
@@ -59,7 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'cloud/build/dokka/htmlMultiModule'
+          path: 'temp/build/dokka/htmlMultiModule'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
