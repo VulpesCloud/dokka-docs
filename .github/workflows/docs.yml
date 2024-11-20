@@ -29,10 +29,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Clone main Repository
-        run: git clone https://github.com/VulpesCloud/Vulpescloud temp
-
-      - name: Change Directory
-        run: cd temp
+        run: git clone https://github.com/VulpesCloud/Vulpescloud .
         
       - name: Set up JDK 21
         uses: actions/setup-java@v4.5.0
@@ -41,10 +38,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Gradle wrapper executable
-        run: chmod +x temp/gradlew
+        run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./temp/gradlew dokkaHtmlMultiModule
+        run: ./gradlew dokkaHtmlMultiModule
 
   deploy:
     environment:
@@ -59,7 +56,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'temp/build/dokka/htmlMultiModule'
+          path: 'build/dokka/htmlMultiModule'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
