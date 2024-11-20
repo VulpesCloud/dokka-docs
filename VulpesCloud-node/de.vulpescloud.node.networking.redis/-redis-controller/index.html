@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RedisController</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            VulpesCloud
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":VulpesCloud-node:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="VulpesCloud-node::de.vulpescloud.node.networking.redis/RedisController///PointingToDeclaration//-816077347">
+  <div class="breadcrumbs"><a href="../../index.html">VulpesCloud-node</a><span class="delimiter">/</span><a href="../index.html">de.vulpescloud.node.networking.redis</a><span class="delimiter">/</span><span class="current">RedisController</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Redis</span><wbr><span><span>Controller</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RedisController</a> : <span data-unresolved-link="redis.clients.jedis/BinaryJedisPubSub///PointingToDeclaration/">BinaryJedisPubSub</span>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html">Runnable</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1635207095%2FConstructors%2F-816077347" anchor-label="RedisController" id="1635207095%2FConstructors%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-redis-controller.html"><span>Redis</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1635207095%2FConstructors%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1717195286%2FProperties%2F-816077347" anchor-label="subscribedChannels" id="1717195286%2FProperties%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1717195286%2FProperties%2F-816077347"><span>subscribed</span><wbr><span><span>Channels</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1717195286%2FProperties%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="index.html#1717195286%2FProperties%2F-816077347">subscribedChannels</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="608183029%2FFunctions%2F-816077347" anchor-label="addToList" id="608183029%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-to-list.html"><span>add</span><wbr><span>To</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="608183029%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-to-list.html"><span class="token function">addToList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">values<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1677732111%2FFunctions%2F-816077347" anchor-label="createHashFromMap" id="1677732111%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-hash-from-map.html"><span>create</span><wbr><span>Hash</span><wbr><span>From</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1677732111%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-hash-from-map.html"><span class="token function">createHashFromMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">values<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="407580719%2FFunctions%2F-816077347" anchor-label="createListFromList" id="407580719%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-list-from-list.html"><span>create</span><wbr><span>List</span><wbr><span>From</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="407580719%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-list-from-list.html"><span class="token function">createListFromList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">values<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1689601783%2FFunctions%2F-816077347" anchor-label="deleteEntriesFromArray" id="1689601783%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-entries-from-array.html"><span>delete</span><wbr><span>Entries</span><wbr><span>From</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1689601783%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-entries-from-array.html"><span class="token function">deleteEntriesFromArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">keys<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1313951089%2FFunctions%2F-816077347" anchor-label="deleteHash" id="1313951089%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-hash.html"><span>delete</span><wbr><span><span>Hash</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1313951089%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-hash.html"><span class="token function">deleteHash</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="583613340%2FFunctions%2F-816077347" anchor-label="deleteHashField" id="583613340%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-hash-field.html"><span>delete</span><wbr><span>Hash</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="583613340%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-hash-field.html"><span class="token function">deleteHashField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fieldName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1200379574%2FFunctions%2F-816077347" anchor-label="deleteHashFieldByValue" id="1200379574%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-hash-field-by-value.html"><span>delete</span><wbr><span>Hash</span><wbr><span>Field</span><wbr><span>By</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1200379574%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-hash-field-by-value.html"><span class="token function">deleteHashFieldByValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1022562561%2FFunctions%2F-816077347" anchor-label="deleteList" id="1022562561%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-list.html"><span>delete</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1022562561%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-list.html"><span class="token function">deleteList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-623123660%2FFunctions%2F-816077347" anchor-label="deleteString" id="-623123660%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-string.html"><span>delete</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-623123660%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-string.html"><span class="token function">deleteString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-696679734%2FFunctions%2F-816077347" anchor-label="getAllHashFields" id="-696679734%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-hash-fields.html"><span>get</span><wbr><span>All</span><wbr><span>Hash</span><wbr><span><span>Fields</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-696679734%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-all-hash-fields.html"><span class="token function">getAllHashFields</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1471711859%2FFunctions%2F-816077347" anchor-label="getAllHashValues" id="1471711859%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-all-hash-values.html"><span>get</span><wbr><span>All</span><wbr><span>Hash</span><wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1471711859%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-all-hash-values.html"><span class="token function">getAllHashValues</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1482556499%2FFunctions%2F-816077347" anchor-label="getHashField" id="1482556499%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-hash-field.html"><span>get</span><wbr><span>Hash</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1482556499%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-hash-field.html"><span class="token function">getHashField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fieldName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-909395948%2FFunctions%2F-816077347" anchor-label="getHashFieldNameByValue" id="-909395948%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-hash-field-name-by-value.html"><span>get</span><wbr><span>Hash</span><wbr><span>Field</span><wbr><span>Name</span><wbr><span>By</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-909395948%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-hash-field-name-by-value.html"><span class="token function">getHashFieldNameByValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1545786341%2FFunctions%2F-816077347" anchor-label="getHashFieldNamesByValue" id="1545786341%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-hash-field-names-by-value.html"><span>get</span><wbr><span>Hash</span><wbr><span>Field</span><wbr><span>Names</span><wbr><span>By</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1545786341%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-hash-field-names-by-value.html"><span class="token function">getHashFieldNamesByValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1372909272%2FFunctions%2F-816077347" anchor-label="getHashValuesAsPair" id="-1372909272%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-hash-values-as-pair.html"><span>get</span><wbr><span>Hash</span><wbr><span>Values</span><wbr><span>As</span><wbr><span><span>Pair</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1372909272%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-hash-values-as-pair.html"><span class="token function">getHashValuesAsPair</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1782320493%2FFunctions%2F-816077347" anchor-label="getJedisPool" id="-1782320493%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-jedis-pool.html"><span>get</span><wbr><span>Jedis</span><wbr><span><span>Pool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1782320493%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-jedis-pool.html"><span class="token function">getJedisPool</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="redis.clients.jedis/JedisPool///PointingToDeclaration/">JedisPool</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-814527062%2FFunctions%2F-816077347" anchor-label="getList" id="-814527062%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-list.html"><span>get</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-814527062%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-list.html"><span class="token function">getList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-834692707%2FFunctions%2F-816077347" anchor-label="getString" id="-834692707%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-string.html"><span>get</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-834692707%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-string.html"><span class="token function">getString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1161424072%2FFunctions%2F-816077347" anchor-label="isRedisConnectionOffline" id="-1161424072%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-redis-connection-offline.html"><span>is</span><wbr><span>Redis</span><wbr><span>Connection</span><wbr><span><span>Offline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1161424072%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-redis-connection-offline.html"><span class="token function">isRedisConnectionOffline</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1980953276%2FFunctions%2F-816077347" anchor-label="isSubscribed" id="1980953276%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1980953276%2FFunctions%2F-816077347"><span>is</span><wbr><span><span>Subscribed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1980953276%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#1980953276%2FFunctions%2F-816077347"><span class="token function">isSubscribed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2112004973%2FFunctions%2F-816077347" anchor-label="onMessage" id="2112004973%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2112004973%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112004973%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#2112004973%2FFunctions%2F-816077347"><span class="token function">onMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1468887962%2FFunctions%2F-816077347" anchor-label="onPMessage" id="-1468887962%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1468887962%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>PMessage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1468887962%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1468887962%2FFunctions%2F-816077347"><span class="token function">onPMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1186245925%2FFunctions%2F-816077347" anchor-label="onPong" id="1186245925%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1186245925%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>Pong</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1186245925%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1186245925%2FFunctions%2F-816077347"><span class="token function">onPong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1583530022%2FFunctions%2F-816077347" anchor-label="onPSubscribe" id="-1583530022%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1583530022%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>PSubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1583530022%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1583530022%2FFunctions%2F-816077347"><span class="token function">onPSubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1096291103%2FFunctions%2F-816077347" anchor-label="onPUnsubscribe" id="-1096291103%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1096291103%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>PUnsubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1096291103%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1096291103%2FFunctions%2F-816077347"><span class="token function">onPUnsubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2071375246%2FFunctions%2F-816077347" anchor-label="onSubscribe" id="-2071375246%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2071375246%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>Subscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2071375246%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-2071375246%2FFunctions%2F-816077347"><span class="token function">onSubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1764116103%2FFunctions%2F-816077347" anchor-label="onUnsubscribe" id="-1764116103%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1764116103%2FFunctions%2F-816077347"><span>on</span><wbr><span><span>Unsubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764116103%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1764116103%2FFunctions%2F-816077347"><span class="token function">onUnsubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-825174424%2FFunctions%2F-816077347" anchor-label="ping" id="-825174424%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#735240494%2FFunctions%2F-816077347"><span><span>ping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-825174424%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#735240494%2FFunctions%2F-816077347"><span class="token function">ping</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#1855435082%2FFunctions%2F-816077347"><span class="token function">ping</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1744224699%2FFunctions%2F-816077347" anchor-label="proceed" id="1744224699%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1744224699%2FFunctions%2F-816077347"><span><span>proceed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1744224699%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#1744224699%2FFunctions%2F-816077347"><span class="token function">proceed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="redis.clients.jedis/Connection///PointingToDeclaration/">Connection</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="453299556%2FFunctions%2F-816077347" anchor-label="proceedWithPatterns" id="453299556%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#453299556%2FFunctions%2F-816077347"><span>proceed</span><wbr><span>With</span><wbr><span><span>Patterns</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="453299556%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#453299556%2FFunctions%2F-816077347"><span class="token function">proceedWithPatterns</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="redis.clients.jedis/Connection///PointingToDeclaration/">Connection</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1282748420%2FFunctions%2F-816077347" anchor-label="psubscribe" id="-1282748420%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1282748420%2FFunctions%2F-816077347"><span><span>psubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1282748420%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#-1282748420%2FFunctions%2F-816077347"><span class="token function">psubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="931454626%2FFunctions%2F-816077347" anchor-label="punsubscribe" id="931454626%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#913204767%2FFunctions%2F-816077347"><span><span>punsubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="931454626%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#913204767%2FFunctions%2F-816077347"><span class="token function">punsubscribe</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#242122197%2FFunctions%2F-816077347"><span class="token function">punsubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2030580553%2FFunctions%2F-816077347" anchor-label="removeFromList" id="2030580553%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-from-list.html"><span>remove</span><wbr><span>From</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2030580553%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="remove-from-list.html"><span class="token function">removeFromList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1088451864%2FFunctions%2F-816077347" anchor-label="removeFromListByIndex" id="1088451864%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-from-list-by-index.html"><span>remove</span><wbr><span>From</span><wbr><span>List</span><wbr><span>By</span><wbr><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1088451864%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="remove-from-list-by-index.html"><span class="token function">removeFromListByIndex</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2063281559%2FFunctions%2F-816077347" anchor-label="removeFromListByValue" id="-2063281559%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-from-list-by-value.html"><span>remove</span><wbr><span>From</span><wbr><span>List</span><wbr><span>By</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2063281559%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="remove-from-list-by-value.html"><span class="token function">removeFromListByValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1591725949%2FFunctions%2F-816077347" anchor-label="run" id="-1591725949%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run.html"><span><span>run</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1591725949%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="run.html"><span class="token function">run</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1109136474%2FFunctions%2F-816077347" anchor-label="sendMessage" id="1109136474%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-message.html"><span>send</span><wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1109136474%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="send-message.html"><span class="token function">sendMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">channel<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1466979476%2FFunctions%2F-816077347" anchor-label="setHashField" id="-1466979476%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-hash-field.html"><span>set</span><wbr><span>Hash</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1466979476%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-hash-field.html"><span class="token function">setHashField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hashName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fieldName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-810850151%2FFunctions%2F-816077347" anchor-label="setListValue" id="-810850151%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-list-value.html"><span>set</span><wbr><span>List</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-810850151%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-list-value.html"><span class="token function">setListValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="6875598%2FFunctions%2F-816077347" anchor-label="setString" id="6875598%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-string.html"><span>set</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="6875598%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-string.html"><span class="token function">setString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="432919510%2FFunctions%2F-816077347" anchor-label="shutdown" id="432919510%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shutdown.html"><span><span>shutdown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="432919510%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="shutdown.html"><span class="token function">shutdown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-684780314%2FFunctions%2F-816077347" anchor-label="subscribe" id="-684780314%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-684780314%2FFunctions%2F-816077347"><span><span>subscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-684780314%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#-684780314%2FFunctions%2F-816077347"><span class="token function">subscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-87361465%2FFunctions%2F-816077347" anchor-label="testHashOperation" id="-87361465%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-hash-operation.html"><span>test</span><wbr><span>Hash</span><wbr><span><span>Operation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-87361465%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="test-hash-operation.html"><span class="token function">testHashOperation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1635182524%2FFunctions%2F-816077347" anchor-label="unsubscribe" id="1635182524%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-178500087%2FFunctions%2F-816077347"><span><span>unsubscribe</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1635182524%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#-178500087%2FFunctions%2F-816077347"><span class="token function">unsubscribe</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#-636145601%2FFunctions%2F-816077347"><span class="token function">unsubscribe</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,742 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CloudCommandManager</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            VulpesCloud
+                    </a>            </div>
+            <div class="library-version">1.0.0-alpha
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":VulpesCloud-node:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="VulpesCloud-node::de.vulpescloud.node.command/CloudCommandManager///PointingToDeclaration//-816077347">
+  <div class="breadcrumbs"><a href="../../index.html">VulpesCloud-node</a><span class="delimiter">/</span><a href="../index.html">de.vulpescloud.node.command</a><span class="delimiter">/</span><span class="current">CloudCommandManager</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cloud</span><wbr><span>Command</span><wbr><span><span>Manager</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CloudCommandManager</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executionCoordinator<span class="token operator">: </span><span data-unresolved-link="org.incendo.cloud.execution/ExecutionCoordinator///PointingToDeclaration/">ExecutionCoordinator</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="org.incendo.cloud/CommandManager///PointingToDeclaration/">CommandManager</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt; </span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-264259181%2FConstructors%2F-816077347" anchor-label="CloudCommandManager" id="-264259181%2FConstructors%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cloud-command-manager.html"><span>Cloud</span><wbr><span>Command</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264259181%2FConstructors%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executionCoordinator<span class="token operator">: </span><span data-unresolved-link="org.incendo.cloud.execution/ExecutionCoordinator///PointingToDeclaration/">ExecutionCoordinator</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1595722891%2FClasslikes%2F-816077347" anchor-label="Companion" id="-1595722891%2FClasslikes%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1595722891%2FClasslikes%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="399920988%2FProperties%2F-816077347" anchor-label="logger" id="399920988%2FProperties%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logger.html"><span><span>logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399920988%2FProperties%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="logger.html">logger</a><span class="token operator">: </span><span data-unresolved-link="org.slf4j/Logger///PointingToDeclaration/">Logger</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1130425400%2FFunctions%2F-816077347" anchor-label="appendSuggestionMapper" id="1130425400%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1130425400%2FFunctions%2F-816077347"><span>append</span><wbr><span>Suggestion</span><wbr><span><span>Mapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1130425400%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1130425400%2FFunctions%2F-816077347"><span class="token function">appendSuggestionMapper</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapper<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionMapper///PointingToDeclaration/">SuggestionMapper</span><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.incendo.cloud.suggestion/Suggestion///PointingToDeclaration/">Suggestion</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1915146457%2FFunctions%2F-816077347" anchor-label="bootstrap" id="-1915146457%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bootstrap.html"><span><span>bootstrap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915146457%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="bootstrap.html"><span class="token function">bootstrap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="lombok/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span>args<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="lombok/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="lombok/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span>managerConsumer<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html">Consumer</a><span class="token operator">&lt;</span><span data-unresolved-link="org.incendo.cloud/CommandManager///PointingToDeclaration/">CommandManager</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1813148422%2FFunctions%2F-816077347" anchor-label="capabilities" id="-1813148422%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1813148422%2FFunctions%2F-816077347"><span><span>capabilities</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1813148422%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1813148422%2FFunctions%2F-816077347"><span class="token function">capabilities</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CloudCapability///PointingToDeclaration/">CloudCapability</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1476901116%2FFunctions%2F-816077347" anchor-label="captionFormatter" id="1476901116%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2097501548%2FFunctions%2F-816077347"><span>caption</span><wbr><span><span>Formatter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1476901116%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#2097501548%2FFunctions%2F-816077347"><span class="token function">captionFormatter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.caption/CaptionFormatter///PointingToDeclaration/">CaptionFormatter</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-860997348%2FFunctions%2F-816077347"><span class="token function">captionFormatter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">captionFormatter<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.caption/CaptionFormatter///PointingToDeclaration/">CaptionFormatter</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1118391491%2FFunctions%2F-816077347" anchor-label="captionRegistry" id="1118391491%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2141148217%2FFunctions%2F-816077347"><span>caption</span><wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1118391491%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#-2141148217%2FFunctions%2F-816077347"><span class="token function">captionRegistry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.caption/CaptionRegistry///PointingToDeclaration/">CaptionRegistry</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#1116603080%2FFunctions%2F-816077347"><span class="token function">captionRegistry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">captionRegistry<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.caption/CaptionRegistry///PointingToDeclaration/">CaptionRegistry</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2040349225%2FFunctions%2F-816077347" anchor-label="command" id="-2040349225%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1895200045%2FFunctions%2F-816077347"><span><span>command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2040349225%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1895200045%2FFunctions%2F-816077347"><span class="token function">command</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">command<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CommandManager///PointingToDeclaration/">CommandManager</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1113417526%2FFunctions%2F-816077347"><span class="token function">command</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">commandFactory<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CommandFactory///PointingToDeclaration/">CommandFactory</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CommandManager///PointingToDeclaration/">CommandManager</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#285258176%2FFunctions%2F-816077347"><span class="token function">command</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">command<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command///PointingToDeclaration/">Command</span><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CommandManager///PointingToDeclaration/">CommandManager</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1528420820%2FFunctions%2F-816077347" anchor-label="commandBuilder" id="-1528420820%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1401818320%2FFunctions%2F-816077347"><span>command</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1528420820%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1401818320%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1449855959%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">meta<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.meta/CommandMeta///PointingToDeclaration/">CommandMeta</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#149078152%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.description/Description///PointingToDeclaration/">Description</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-299474797%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">meta<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.meta/CommandMeta///PointingToDeclaration/">CommandMeta</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-141520417%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.description/Description///PointingToDeclaration/">Description</span><span class="token punctuation">, </span></span><span class="parameter ">meta<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.meta/CommandMeta///PointingToDeclaration/">CommandMeta</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1120227189%2FFunctions%2F-816077347"><span class="token function">commandBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">meta<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.meta/CommandMeta///PointingToDeclaration/">CommandMeta</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.description/Description///PointingToDeclaration/">Description</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>aliases<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2008198356%2FFunctions%2F-816077347" anchor-label="commandExecutor" id="-2008198356%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2008198356%2FFunctions%2F-816077347"><span>command</span><wbr><span><span>Executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2008198356%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-2008198356%2FFunctions%2F-816077347"><span class="token function">commandExecutor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.execution/CommandExecutor///PointingToDeclaration/">CommandExecutor</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1489065578%2FFunctions%2F-816077347" anchor-label="commandRegistrationHandler" id="1489065578%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1489065578%2FFunctions%2F-816077347"><span>command</span><wbr><span>Registration</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1489065578%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1489065578%2FFunctions%2F-816077347"><span class="token function">commandRegistrationHandler</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.internal/CommandRegistrationHandler///PointingToDeclaration/">CommandRegistrationHandler</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="632689640%2FFunctions%2F-816077347" anchor-label="commands" id="632689640%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#632689640%2FFunctions%2F-816077347"><span><span>commands</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="632689640%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#632689640%2FFunctions%2F-816077347"><span class="token function">commands</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command///PointingToDeclaration/">Command</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-517579001%2FFunctions%2F-816077347" anchor-label="commandSyntaxFormatter" id="-517579001%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1806994860%2FFunctions%2F-816077347"><span>command</span><wbr><span>Syntax</span><wbr><span><span>Formatter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-517579001%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1806994860%2FFunctions%2F-816077347"><span class="token function">commandSyntaxFormatter</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.syntax/CommandSyntaxFormatter///PointingToDeclaration/">CommandSyntaxFormatter</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#738068687%2FFunctions%2F-816077347"><span class="token function">commandSyntaxFormatter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">commandSyntaxFormatter<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.syntax/CommandSyntaxFormatter///PointingToDeclaration/">CommandSyntaxFormatter</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1884865473%2FFunctions%2F-816077347" anchor-label="commandTree" id="1884865473%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1884865473%2FFunctions%2F-816077347"><span>command</span><wbr><span><span>Tree</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1884865473%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1884865473%2FFunctions%2F-816077347"><span class="token function">commandTree</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CommandTree///PointingToDeclaration/">CommandTree</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1550509890%2FFunctions%2F-816077347" anchor-label="componentBuilder" id="1550509890%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1550509890%2FFunctions%2F-816077347"><span>component</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1550509890%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="index.html#1550509890%2FFunctions%2F-816077347">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="index.html#1550509890%2FFunctions%2F-816077347"><span class="token function">componentBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="index.html#1550509890%2FFunctions%2F-816077347">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.component/CommandComponent.Builder///PointingToDeclaration/">CommandComponent.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span><a href="index.html#1550509890%2FFunctions%2F-816077347">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-621268795%2FFunctions%2F-816077347" anchor-label="createDefaultCommandMeta" id="-621268795%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-621268795%2FFunctions%2F-816077347"><span>create</span><wbr><span>Default</span><wbr><span>Command</span><wbr><span><span>Meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-621268795%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-621268795%2FFunctions%2F-816077347"><span class="token function">createDefaultCommandMeta</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.meta/CommandMeta///PointingToDeclaration/">CommandMeta</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1313116347%2FFunctions%2F-816077347" anchor-label="createHelpHandler" id="-1313116347%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2060497373%2FFunctions%2F-816077347"><span>create</span><wbr><span>Help</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1313116347%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#2060497373%2FFunctions%2F-816077347"><span class="token function">createHelpHandler</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.help/HelpHandler///PointingToDeclaration/">HelpHandler</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#1589559220%2FFunctions%2F-816077347"><span class="token function">createHelpHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filter<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.help/CommandPredicate///PointingToDeclaration/">CommandPredicate</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.help/HelpHandler///PointingToDeclaration/">HelpHandler</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-718521386%2FFunctions%2F-816077347" anchor-label="decorateBuilder" id="-718521386%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-718521386%2FFunctions%2F-816077347"><span>decorate</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-718521386%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-718521386%2FFunctions%2F-816077347"><span class="token function">decorateBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command.Builder///PointingToDeclaration/">Command.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2028124344%2FFunctions%2F-816077347" anchor-label="deleteRootCommand" id="2028124344%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2028124344%2FFunctions%2F-816077347"><span>delete</span><wbr><span>Root</span><wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028124344%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.EXPERIMENTAL///PointingToDeclaration/">API.Status.EXPERIMENTAL</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#2028124344%2FFunctions%2F-816077347"><span class="token function">deleteRootCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rootCommand<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1329146561%2FFunctions%2F-816077347" anchor-label="exceptionController" id="-1329146561%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1329146561%2FFunctions%2F-816077347"><span>exception</span><wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1329146561%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#-1329146561%2FFunctions%2F-816077347"><span class="token function">exceptionController</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.exception.handling/ExceptionController///PointingToDeclaration/">ExceptionController</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1884333929%2FFunctions%2F-816077347" anchor-label="flagBuilder" id="1884333929%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1884333929%2FFunctions%2F-816077347"><span>flag</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1884333929%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1884333929%2FFunctions%2F-816077347"><span class="token function">flagBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.parser.flag/CommandFlag.Builder///PointingToDeclaration/">CommandFlag.Builder</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1070038460%2FFunctions%2F-816077347" anchor-label="hasCapability" id="1070038460%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1070038460%2FFunctions%2F-816077347"><span>has</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1070038460%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1070038460%2FFunctions%2F-816077347"><span class="token function">hasCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capability<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/CloudCapability///PointingToDeclaration/">CloudCapability</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1351563455%2FFunctions%2F-816077347" anchor-label="hasPermission" id="1351563455%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-permission.html"><span>has</span><wbr><span><span>Permission</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1351563455%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="has-permission.html"><span class="token function">hasPermission</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sender<span class="token operator">: </span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1639266922%2FFunctions%2F-816077347" anchor-label="helpHandlerFactory" id="1639266922%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#72279247%2FFunctions%2F-816077347"><span>help</span><wbr><span>Handler</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1639266922%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#72279247%2FFunctions%2F-816077347"><span class="token function">helpHandlerFactory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.help/HelpHandlerFactory///PointingToDeclaration/">HelpHandlerFactory</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="index.html#-1657341363%2FFunctions%2F-816077347"><span class="token function">helpHandlerFactory</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">helpHandlerFactory<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.help/HelpHandlerFactory///PointingToDeclaration/">HelpHandlerFactory</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1778118530%2FFunctions%2F-816077347" anchor-label="isCommandRegistrationAllowed" id="1778118530%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1778118530%2FFunctions%2F-816077347"><span>is</span><wbr><span>Command</span><wbr><span>Registration</span><wbr><span><span>Allowed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1778118530%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1778118530%2FFunctions%2F-816077347"><span class="token function">isCommandRegistrationAllowed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="401762896%2FFunctions%2F-816077347" anchor-label="parameterInjectorRegistry" id="401762896%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#401762896%2FFunctions%2F-816077347"><span>parameter</span><wbr><span>Injector</span><wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="401762896%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#401762896%2FFunctions%2F-816077347"><span class="token function">parameterInjectorRegistry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.injection/ParameterInjectorRegistry///PointingToDeclaration/">ParameterInjectorRegistry</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-367819468%2FFunctions%2F-816077347" anchor-label="parserRegistry" id="-367819468%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-367819468%2FFunctions%2F-816077347"><span>parser</span><wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-367819468%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-367819468%2FFunctions%2F-816077347"><span class="token function">parserRegistry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.parser/ParserRegistry///PointingToDeclaration/">ParserRegistry</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-834297385%2FFunctions%2F-816077347" anchor-label="postprocessContext" id="-834297385%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-834297385%2FFunctions%2F-816077347"><span>postprocess</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-834297385%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-834297385%2FFunctions%2F-816077347"><span class="token function">postprocessContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.context/CommandContext///PointingToDeclaration/">CommandContext</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">command<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud/Command///PointingToDeclaration/">Command</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.incendo.cloud.services/State///PointingToDeclaration/">State</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-902492300%2FFunctions%2F-816077347" anchor-label="preprocessContext" id="-902492300%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-902492300%2FFunctions%2F-816077347"><span>preprocess</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-902492300%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-902492300%2FFunctions%2F-816077347"><span class="token function">preprocessContext</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.context/CommandContext///PointingToDeclaration/">CommandContext</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">commandInput<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.context/CommandInput///PointingToDeclaration/">CommandInput</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.incendo.cloud.services/State///PointingToDeclaration/">State</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1460837769%2FFunctions%2F-816077347" anchor-label="registerCommandPostProcessor" id="-1460837769%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1460837769%2FFunctions%2F-816077347"><span>register</span><wbr><span>Command</span><wbr><span>Post</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1460837769%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1460837769%2FFunctions%2F-816077347"><span class="token function">registerCommandPostProcessor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">processor<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.execution.postprocessor/CommandPostprocessor///PointingToDeclaration/">CommandPostprocessor</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-763876436%2FFunctions%2F-816077347" anchor-label="registerCommandPreProcessor" id="-763876436%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-763876436%2FFunctions%2F-816077347"><span>register</span><wbr><span>Command</span><wbr><span>Pre</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-763876436%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-763876436%2FFunctions%2F-816077347"><span class="token function">registerCommandPreProcessor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">processor<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.execution.preprocessor/CommandPreprocessor///PointingToDeclaration/">CommandPreprocessor</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1283568443%2FFunctions%2F-816077347" anchor-label="requireState" id="1283568443%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1283568443%2FFunctions%2F-816077347"><span>require</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1283568443%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1283568443%2FFunctions%2F-816077347"><span class="token function">requireState</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1372707418%2FFunctions%2F-816077347" anchor-label="rootCommands" id="-1372707418%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1372707418%2FFunctions%2F-816077347"><span>root</span><wbr><span><span>Commands</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1372707418%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1372707418%2FFunctions%2F-816077347"><span class="token function">rootCommands</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html">MutableCollection</a><span class="token operator">&lt;</span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2143492714%2FFunctions%2F-816077347" anchor-label="run" id="-2143492714%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run.html"><span><span>run</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2143492714%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="run.html"><span class="token function">run</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">args<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1054332589%2FFunctions%2F-816077347" anchor-label="settings" id="1054332589%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1054332589%2FFunctions%2F-816077347"><span><span>settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1054332589%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1054332589%2FFunctions%2F-816077347"><span class="token function">settings</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.setting/Configurable///PointingToDeclaration/">Configurable</span><span class="token operator">&lt;</span><span data-unresolved-link="org.incendo.cloud.setting/ManagerSetting///PointingToDeclaration/">ManagerSetting</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2137651065%2FFunctions%2F-816077347" anchor-label="state" id="2137651065%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2137651065%2FFunctions%2F-816077347"><span><span>state</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2137651065%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#2137651065%2FFunctions%2F-816077347"><span class="token function">state</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-230574140%2FFunctions%2F-816077347" anchor-label="suggestionFactory" id="-230574140%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-230574140%2FFunctions%2F-816077347"><span>suggestion</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-230574140%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-230574140%2FFunctions%2F-816077347"><span class="token function">suggestionFactory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionFactory///PointingToDeclaration/">SuggestionFactory</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span><span class="token keyword">out </span><span data-unresolved-link="org.incendo.cloud.suggestion/Suggestion///PointingToDeclaration/">Suggestion</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1589413969%2FFunctions%2F-816077347" anchor-label="suggestionMapper" id="1589413969%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#865098923%2FFunctions%2F-816077347"><span>suggestion</span><wbr><span><span>Mapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1589413969%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#865098923%2FFunctions%2F-816077347"><span class="token function">suggestionMapper</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionMapper///PointingToDeclaration/">SuggestionMapper</span><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.incendo.cloud.suggestion/Suggestion///PointingToDeclaration/">Suggestion</span><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#144888050%2FFunctions%2F-816077347"><span class="token function">suggestionMapper</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mapper<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionMapper///PointingToDeclaration/">SuggestionMapper</span><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.incendo.cloud.suggestion/Suggestion///PointingToDeclaration/">Suggestion</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1865943410%2FFunctions%2F-816077347" anchor-label="suggestionProcessor" id="1865943410%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1745089788%2FFunctions%2F-816077347"><span>suggestion</span><wbr><span><span>Processor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1865943410%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1745089788%2FFunctions%2F-816077347"><span class="token function">suggestionProcessor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionProcessor///PointingToDeclaration/">SuggestionProcessor</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#562316002%2FFunctions%2F-816077347"><span class="token function">suggestionProcessor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">suggestionProcessor<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.suggestion/SuggestionProcessor///PointingToDeclaration/">SuggestionProcessor</span><span class="token operator">&lt;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="65919128%2FFunctions%2F-816077347" anchor-label="testPermission" id="65919128%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#65919128%2FFunctions%2F-816077347"><span>test</span><wbr><span><span>Permission</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="65919128%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.apiguardian.api/API///PointingToDeclaration/"><span class="token annotation builtin">API</span></span><span class="token punctuation">(</span><span>status<span class="token operator"> = </span><span data-unresolved-link="org.apiguardian.api/API.Status.STABLE///PointingToDeclaration/">API.Status.STABLE</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#65919128%2FFunctions%2F-816077347"><span class="token function">testPermission</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sender<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><a href="../../de.vulpescloud.node.command.source/-command-source/index.html">CommandSource</a><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.permission/Permission///PointingToDeclaration/">Permission</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.permission/PermissionResult///PointingToDeclaration/">PermissionResult</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1302293024%2FFunctions%2F-816077347" anchor-label="transitionIfPossible" id="-1302293024%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1302293024%2FFunctions%2F-816077347"><span>transition</span><wbr><span>If</span><wbr><span><span>Possible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1302293024%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1302293024%2FFunctions%2F-816077347"><span class="token function">transitionIfPossible</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">in<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span><span class="token punctuation">, </span></span><span class="parameter ">out<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="162842648%2FFunctions%2F-816077347" anchor-label="transitionOrThrow" id="162842648%2FFunctions%2F-816077347" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":VulpesCloud-node:dokkaHtmlPartial/main" data-filterable-set=":VulpesCloud-node:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#162842648%2FFunctions%2F-816077347"><span>transition</span><wbr><span>Or</span><wbr><span><span>Throw</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="162842648%2FFunctions%2F-816077347"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":VulpesCloud-node:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#162842648%2FFunctions%2F-816077347"><span class="token function">transitionOrThrow</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">in<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span><span class="token punctuation">, </span></span><span class="parameter ">out<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.checkerframework.checker.nullness.qual/NonNull///PointingToDeclaration/"><span class="token annotation builtin">NonNull</span></span>&nbsp;</span><span data-unresolved-link="org.incendo.cloud.state/RegistrationState///PointingToDeclaration/">RegistrationState</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
