@@ -45,7 +45,11 @@ jobs:
           ./gradlew dokkaHtmlMultiModule
       - name: Verify Output Directory
         run: |
-          ls -R || echo "Directory not found"
+          ls || echo "Directory not found"
+          cd vulpescloud
+          ls
+          cd build
+          ls
 
   deploy:
     needs: build
